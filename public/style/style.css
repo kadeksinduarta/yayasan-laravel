@@ -1,0 +1,445 @@
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+nav {
+    background-color: #aa0809;
+    position: fixed !important;
+    width: 100%;
+    z-index: 100;
+}
+nav #navbarText ul li a {
+    font-weight: bold;
+    color: #aeae;
+    transition: all 0.3s;
+    margin-left: 30px;
+}
+nav #navbarText ul li .active {
+    border-bottom: 2px solid black;
+    color: aquamarine;
+}
+nav #navbarText ul li .off {
+    border: 0;
+    color: #fff;
+}
+
+nav button:hover {
+    border: none !important;
+}
+.container .navbar-nav .contact {
+    padding: 8px 20px !important;
+    background-color: aqua;
+    border-radius: 8px;
+    color: #fff !important;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #d5d5d5;
+    display: inline-block !important;
+}
+.contact:active {
+    transform: scale(0.97);
+}
+
+.halaman-utama {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+.halaman-utama .informasi,
+.halaman-utama .gambar,
+.about .informasi,
+.about .gambar {
+    flex: 1;
+    /* padding: 10px; */
+}
+
+.halaman-utama .informasi p {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+a.button {
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #aa0809;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    /* margin-top: 20px; */
+    display: inline-block;
+}
+
+.halaman-utama .gambar img {
+    width: 80%;
+    padding-left: 10px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+.about {
+    background-color: #aa0809;
+    color: #fff;
+    padding: 0 0 20px 0;
+}
+
+.about .informasi .p {
+    padding-right: 1.5rem;
+}
+
+.about .gambar img {
+    width: 85%;
+    border-bottom-left-radius: 105px;
+    border-top-right-radius: 105px;
+}
+
+.about .gambar .image-about {
+    margin-left: 45px;
+}
+
+.about .about-informasi-2 .informasi {
+    order: 2 !important;
+}
+
+.about .about-informasi-2 .gambar {
+    order: 1 !important;
+}
+
+body .our-gallery .containers img {
+    vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+body .our-gallery .containers {
+    position: relative;
+    padding: 10px;
+}
+
+/* Hide the images by default */
+body .our-gallery .containers .mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+body .our-gallery .containers .cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+body .our-gallery .containers .prev,
+body .our-gallery .containers .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1; /* Tambahkan z-index untuk menempatkan tombol di atas gambar */
+    text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+body .our-gallery .containers .next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+body .our-gallery .containers .prev:hover,
+body .our-gallery .containers .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+body .our-gallery .containers .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+body .our-gallery .containers .caption-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2px 16px;
+    color: white;
+}
+
+body .our-gallery .containers .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+body .our-gallery .containers .column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+body .our-gallery .containers .demo {
+    opacity: 0.6;
+}
+
+body .our-gallery .containers .active,
+body .our-gallery .containers .demo:hover {
+    opacity: 1;
+}
+
+body .bergabung-dan-mendukung .content-bergabung-mendukung {
+    display: flex;
+    align-items: center;
+}
+
+body .bergabung-dan-mendukung .content-bergabung-mendukung .no-rekening {
+    flex: 1;
+}
+
+body .bergabung-dan-mendukung .content-bergabung-mendukung .norek {
+    border: 1px solid black;
+    background-color: #aeaeae;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.564);
+    text-align: center;
+    padding: 25px 20px;
+    margin: auto;
+    width: 350px;
+}
+
+body .bergabung-dan-mendukung .content-bergabung-mendukung .informasi {
+    flex: 1;
+}
+
+body .testimoni .list-testimoni .testimonis {
+    /* bg-warning px-5 py-2" style="width: 350px; */
+    background-color: orange;
+    padding: 10px 20px;
+    width: 350px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* halaman shedule */
+body .schedule .container-schedule {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+body .schedule .list-schedule {
+    background-color: aqua;
+    /* text-align: center; */
+    display: inline-block;
+    margin: auto;
+    /* padding: 10px 20px; */
+    border-radius: 8px;
+    margin-top: 30px;
+}
+body .schedule .list-schedule ol {
+    position: relative;
+}
+body .schedule .list-schedule .hari {
+    list-style: none;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #aa0809;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    left: 0px;
+}
+
+body .schedule .list-schedule ul {
+    padding: 40px 60px 0;
+}
+
+body .shedule-gambar,
+body .what-we-do-gambar,
+body .contact-gambar {
+    height: 450px;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    background-color: aqua;
+    background-image: url("../gambar/bg-schedule.png");
+    color: #fff;
+}
+
+/* contact */
+body .halaman-contact {
+    background-color: #aeaeae;
+    padding: 20px 0;
+}
+body .form-sosmed {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+body .form-sosmed .sosial-media ul li,
+body footer ul li {
+    list-style: none;
+    font-size: 20px;
+    width: 100%;
+    background-color: aqua;
+    /* margin: auto; */
+    margin-left: -1rem;
+}
+
+body .form-sosmed .sosial-media ul li img {
+    width: 30px;
+    margin: 5px 15px;
+}
+
+body .form-sosmed .sosial-media,
+body .form-sosmed .form {
+    flex: 1;
+}
+
+body .form-sosmed label {
+    margin-top: 15px;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+body .form-sosmed input,
+body .form-sosmed textarea {
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+}
+
+body .form-sosmed form button {
+    padding: 10px 60px;
+    outline: none;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+body .map iframe {
+    margin: auto;
+    display: block;
+}
+
+/* footer */
+body footer {
+    background-color: #eeeeee;
+    /* margin: auto; */
+    padding: 20px 0;
+}
+
+body footer ul {
+    /* background-color: #a94747; */
+    width: 250px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body footer ul li {
+    margin: auto;
+}
+body footer ul li a img {
+    width: 30px;
+    margin-left: -35px;
+}
+
+@media (max-width: 700px) {
+    .halaman-utama {
+        flex-direction: column-reverse;
+    }
+
+    .about .about-informasi,
+    .about .about-informasi-2 {
+        flex-direction: column-reverse;
+    }
+
+    .about .about-informasi .gambar,
+    .about .about-informasi-2 .gambar {
+        margin: auto !important;
+        display: inline-block;
+        width: 60%;
+        /* margin-left: 100px; */
+    }
+
+    .about .gambar img {
+        width: 100%;
+    }
+
+    .about .about-informasi-2 .informasi {
+        order: 1 !important;
+    }
+    .about .about-informasi-2 .gambar {
+        order: 2 !important;
+    }
+    .about .gambar .image-about {
+        margin-left: 0px;
+    }
+
+    .about p {
+        padding: 0 !important;
+    }
+
+    body .bergabung-dan-mendukung .content-bergabung-mendukung {
+        /* display: flex; */
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    /* what we do */
+    body .isi .div {
+        flex-direction: column !important;
+    }
+
+    body .isi .div .informasi h1,
+    body .isi .div .informasi p {
+        padding-left: 0 !important;
+    }
+
+    body .isi .div .gambar {
+        display: none;
+    }
+
+    /* contact */
+    body .form-sosmed {
+        flex-direction: column-reverse;
+    }
+
+    body .form-sosmed input,
+    body .form-sosmed textarea {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: 0;
+        border-radius: 8px;
+    }
+    body .form-sosmed .form {
+        /* padding: 20px 0; */
+        width: 90%;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    body .form-sosmed .sosial-media ul li img {
+        width: 30px;
+        margin: 0px;
+    }
+}
