@@ -3,27 +3,26 @@
   <x-slot:title>{{ $title }}</x-slot:title>
     <section class="halaman-utama container" id="home">
         <div class="informasi">
+          <h1>Yayasan <br>Gumanti Rahayu</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nostrum non, consequuntur tenetur odio ad vel quisquam aut praesentium culpa, rerum fuga. Eius harum eaque dicta laborum, minus ullam eos laboriosam aut modi, ste
-            deleniti cumque, fugit optio.
+            Yayasan kami fokus pada pendidikan formal, pengembangan karakter, soft skill, kreativitas, serta pemahaman budaya dan lingkungan melalui program Keliki Ecolution untuk menciptakan individu yang berdaya saing dan bertanggung jawab.
           </p>
-          <a href="#" class="button mt-4">Explore</a>
+          <a href="#about-us" class="button mt-4">Explore</a>
         </div>
         <div class="gambar">
           <img src="gambar/gambar.jpg" alt="gambar utama" />
+          <img src="gambar/gambar-2.jpg" alt="gambar utama" class="gambar-2" style="display: none"/>
         </div>
       </section>
       <!-- akhir sectin home -->
       <!--  -->
       <!-- section about -->
-      <section class="about pt-5">
-        <h1 class="text-center pt-3 pb-5">About Us</h1>
+      <section class="about py-5" id="about-us">
+        <h1 class="text-center" style=" margin-bottom: 50px;">About Us</h1>
         <div class="about-informasi d-flex container align-items-center">
           <div class="informasi">
             <p class="p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nostrum non, consequuntur tenetur odio ad vel quisquam aut praesentium culpa, rerum fuga. Eius harum eaque dicta laborum, minus ullam eos laboriosam aut modi, ste
-              deleniti cumque, fugit optio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nostrum non, consequuntur tenetur odio ad vel quisquam aut praesentium culpa, rerum fuga. Eius harum eaque dicta laborum, minus ullam eos
-              laboriosam aut modi, ste deleniti cumque, fugit optio.
+              Yayasan ini dibentuk karena kami menyadari pentingnya pendidikan formal maupun informal serta pembentukan karakter anak pada usia emas. Dengan menyediakan lingkungan yang mendukung, kami berharap anak-anak dapat tumbuh menjadi individu yang berkualitas, berdaya saing tinggi, serta memiliki keterampilan dan pengetahuan yang luas. Mereka diharapkan mampu menghadapi tantangan global di masa depan dengan percaya diri.
             </p>
           </div>
           <div class="gambar">
@@ -33,9 +32,7 @@
         <div class="about-informasi-2 about-informasi d-flex container align-items-center">
           <div class="informasi">
             <p class="ps-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nostrum non, consequuntur tenetur odio ad vel quisquam aut praesentium culpa, rerum fuga. Eius harum eaque dicta laborum, minus ullam eos laboriosam aut modi, ste
-              deleniti cumque, fugit optio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nostrum non, consequuntur tenetur odio ad vel quisquam aut praesentium culpa, rerum fuga. Eius harum eaque dicta laborum, minus ullam eos
-              laboriosam aut modi, ste deleniti cumque, fugit optio.
+              Kami memberikan pembelajaran formal seperti matematika dan bahasa Inggris kepada lebih dari 20 anak setiap minggunya. Selain itu, kami juga fokus pada pengembangan soft skill, kreativitas, dan pemahaman budaya lokal. Melalui seni, public speaking, pramuka, dan program lingkungan Keliki Ecolution, kami berharap anak-anak dapat berkembang secara holistik dan siap menghadapi masa depan dengan percaya diri.
             </p>
           </div>
           <div class="gambar">
@@ -46,12 +43,12 @@
       <!-- akhir section about -->
   
       <!-- our gallery -->
-      <section class="our-gallery container pt-5">
-        <h1 class="text-center mt-3">Our Gallery</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum a, suscipit nulla libero voluptatibus.</p>
+      <section class="our-gallery container py-5">
+        <h1 class="text-center">Our Gallery</h1>
+        <p class="text-center">Galeri kami menampilkan kreativitas anak-anak dalam seni, budaya, dan lingkungan.</p>
   
         <!-- gambar -->
-        <div class="containers container">
+        <div class="containers container pb-5">
           <div class="mySlides">
             <div class="numbertext">1 / 6</div>
             <img src="gambar/bg.png" style="width: 100%" />
@@ -113,50 +110,35 @@
       </section>
       <!-- akhir our gallery -->
   
-      <!-- section sertifikat -->
-      <section class="sertifikat text-center bg-success p-4 mt-5">
-        <h1>Sertifikat Dan Penghargaan</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem mollitia blanditiis praesentium laudantium.</p>
-        <div class="sertifikat d-flex justify-content-around flex-wrap container">
-          <img src="gambar/sertif.png" class="mt-4" alt="sertif" style="max-width: 300px" />
-          <img src="gambar/sertif.png" class="mt-4" alt="sertif" style="max-width: 300px" />
-          <img src="gambar/sertif.png" class="mt-4" alt="sertif" style="max-width: 300px" />
-          <img src="gambar/sertif.png" class="mt-4" alt="sertif" style="max-width: 300px" />
-          <img src="gambar/sertif.png" class="mt-4" alt="sertif" style="max-width: 300px" />
-          <img src="gambar/sertif.png" class="mt-4" alt="sertif" style="max-width: 300px" />
-        </div>
-      </section>
-      <!-- akhir section sertifikat -->
-  
-      <!-- section our schedule -->
-     
-      <!-- akhir section our schedule -->
-  
       <!-- section bergabung dan mendukung -->
-      <section class="bergabung-dan-mendukung bg-success container p-4">
-        <h1 class="text-center">Bergabung dan mendukung</h1>
-        <p class="text-center mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga perspiciatis hic itaque tempora consequatur dicta.</p>
-        <div class="content-bergabung-mendukung">
-          <div class="no-rekening">
-            <div class="norek">
-              <h5>bergabung dan mendukung</h5>
-              <p class="m-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos fuga, a hic eligendi reiciendis vitae quas quia.</p>
-              <button class="py-2 px-5 border-0 rounded mt-3">Transfer</button>
+      <section class="bergabung-dan-mendukung py-5">
+        <div class="bergabung-dan-mendukung-2 container">
+          <h1 class="text-center">Bergabung dan mendukung</h1>
+          <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga perspiciatis hic itaque tempora consequatur dicta.</p>
+          <div class="content-bergabung-mendukung">
+            <div class="no-rekening">
+              <div class="norek">
+                <h5>Transfer</h5>
+                <img src="gambar/bca.svg" alt="" style="width:150px; margin-top:10px;">
+                <p class="m-3">0933174795548</p>
+                <input type="text" name="" value="0933174795548" id="myInput">
+                <button id="buttonCopy" onclick="myFunction()">Copy</button>
+              </div>
             </div>
-          </div>
-          <div class="informasi">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum dignissimos ad illo error, vel dolores consequatur animi nam temporibus, amet eius placeat eveniet molestias. Dolores architecto rerum magnam, omnis eveniet eum
-            earum eius. Architecto quia omnis perferendis velit inventore eum blanditiis repellat reprehenderit vel minus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum dignissimos ad illo error,quia omnis perferendis
-            velit inventore eum blanditiis repellat reprehenderit vel minus?
+            <div class="informasi">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum dignissimos ad illo error, vel dolores consequatur animi nam temporibus, amet eius placeat eveniet molestias. Dolores architecto rerum magnam, omnis eveniet eum
+              earum eius. Architecto quia omnis perferendis velit inventore eum blanditiis repellat reprehenderit vel minus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum dignissimos ad illo error,quia omnis perferendis
+              velit inventore eum blanditiis repellat reprehenderit vel minus?
+            </div>
           </div>
         </div>
       </section>
       <!-- akhir section bergabung dan mendukung -->
   
       <!-- section kebijakan dan privasi -->
-      <section class="kebijakan-dan-privasi container bg-danger p-4">
+      <section class="kebijakan-dan-privasi container py-5">
         <h1 class="text-center">Kebijakan privasi</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad aut soluta earum.</p>
+        <p class="text-center pb-5">Kebijakan privasi kami merincikan prosedur pengumpulan, penggunaan, dan perlindungan informasi pribadi pengguna.</p>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -199,10 +181,11 @@
       <!-- akhir section kebijakan dan privasi -->
   
       <!-- section testimoni -->
-      <section class="testimoni mb-5 container  ">
-        <h1>Testimoni</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minus animi illum qui.</p>
+      <section class="testimoni py-5 container  ">
+        <h1 class="text-center">Testimoni</h1>
+        <p class="text-center pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minus animi illum qui.</p>
         <div class="list-testimoni container">
+
           <div class="testimonis">
             <h4>Putra Dwi</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit libero aperiam similique at reiciendis in eligendi iure qui fuga quis?</p>
@@ -214,6 +197,40 @@
               <img src="gambar/Star 1.png" alt="" />
             </div>
           </div>
+          <div class="testimonis">
+            <h4>Putra Dwi</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit libero aperiam similique at reiciendis in eligendi iure qui fuga quis?</p>
+            <div class="star">
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+            </div>
+          </div>
+          <div class="testimonis">
+            <h4>Putra Dwi</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit libero aperiam similique at reiciendis in eligendi iure qui fuga quis?</p>
+            <div class="star">
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+            </div>
+          </div>
+          <div class="testimonis">
+            <h4>Putra Dwi</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit libero aperiam similique at reiciendis in eligendi iure qui fuga quis?</p>
+            <div class="star">
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+              <img src="gambar/Star 1.png" alt="" />
+            </div>
+          </div>
+
         </div>
       </section>
       <!-- akhir section testimoni -->

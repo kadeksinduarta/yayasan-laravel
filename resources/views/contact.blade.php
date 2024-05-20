@@ -1,8 +1,8 @@
 <x-layout>
     <x-slot:title>{{ $title }}</x-slot:title>
     <section class="contact-gambar">
-      <h1>contact</h1>
-      <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis beatae qui hic veritatis debitis!</p>
+      <h1 class="titles">Contact</h1>
+      <p class="text-center about-title container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis beatae qui hic veritatis debitis!</p>
     </section>
   
     <section class="halaman-contact">
@@ -24,8 +24,8 @@
                         <span>Br.Calo, Pupuan, Tegallalang, Gianyar, bali</span>
                     </li>
                 </ul>
-                <h1 class="ms-5 fs-4 mt-5" id="text-media-sosial">meida sosial</h1>
-                <ul class="d-flex">
+                <h1 class="" id="text-media-sosial">Meida Sosial</h1>
+                <ol class="d-flex medsos">
                     <li>
                        <a href=""><img src="gambar/wa.png" alt=""></a>
                     </li>
@@ -35,7 +35,7 @@
                     <li>
                         <a href=""><img src="gambar/fb.png" alt=""></a>
                     </li>
-                </ul>
+                </ol>
             </div>
             <div class="form">
                 <form action="">

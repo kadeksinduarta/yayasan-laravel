@@ -1,13 +1,18 @@
 * {
     /* border: 1px solid black; */
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 nav {
-    background-color: #aa0809;
+    background-color: #0c6008;
     position: fixed !important;
     width: 100%;
     z-index: 100;
 }
+nav a.navbar-brand.fw-bold {
+    color: #fff;
+}
+
 nav #navbarText ul li a {
     font-weight: bold;
     color: #aeae;
@@ -15,8 +20,8 @@ nav #navbarText ul li a {
     margin-left: 30px;
 }
 nav #navbarText ul li .active {
-    border-bottom: 2px solid black;
-    color: aquamarine;
+    border-bottom: 2px solid #c6ba57;
+    color: #c6ba57;
 }
 nav #navbarText ul li .off {
     border: 0;
@@ -27,16 +32,9 @@ nav button:hover {
     border: none !important;
 }
 .container .navbar-nav .contact {
-    padding: 8px 20px !important;
-    background-color: aqua;
-    border-radius: 8px;
     color: #fff !important;
     font-weight: bold;
-    box-shadow: 1px 1px 5px #d5d5d5;
     display: inline-block !important;
-}
-.contact:active {
-    transform: scale(0.97);
 }
 
 .halaman-utama {
@@ -53,20 +51,39 @@ nav button:hover {
     /* padding: 10px; */
 }
 
-.halaman-utama .informasi p {
-    font-size: 18px;
+body h1.text-center {
+    color: #0c6008 !important;
+    font-weight: bold;
+    margin-top: 50px;
+    padding-bottom: 8px;
+}
+
+body .halaman-utama h1 {
+    color: #0c6008 !important;
+    font-weight: bold;
+}
+
+body .informasi p {
+    font-size: 19px;
     padding-right: 10px;
 }
 
 a.button {
     font-size: 20px;
     padding: 10px 25px;
-    background-color: #aa0809;
+    background-color: #0c6008;
     color: #fff;
     border-radius: 8px;
     text-decoration: none;
     /* margin-top: 20px; */
     display: inline-block;
+    transition: all 0.3s;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+a.button:hover {
+    transform: scale(0.97);
 }
 
 .halaman-utama .gambar img {
@@ -77,8 +94,8 @@ a.button {
 }
 
 .about {
-    background-color: #aa0809;
-    color: #fff;
+    background-color: #f1f6f2;
+    color: #000;
     padding: 0 0 20px 0;
 }
 
@@ -194,18 +211,25 @@ body .our-gallery .containers .demo:hover {
     opacity: 1;
 }
 
+body .bergabung-dan-mendukung {
+    background-color: #e4f3e2;
+}
+
 body .bergabung-dan-mendukung .content-bergabung-mendukung {
     display: flex;
     align-items: center;
+    padding-top: 40px;
+    /* background-color: #f1f6f2; */
 }
 
-body .bergabung-dan-mendukung .content-bergabung-mendukung .no-rekening {
+body .bergabung-dan-mendukung .content-bergabung-mendukung .no-rekening,
+body .bergabung-dan-mendukung .content-bergabung-mendukung .informasi {
     flex: 1;
 }
 
 body .bergabung-dan-mendukung .content-bergabung-mendukung .norek {
     border: 1px solid black;
-    background-color: #aeaeae;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.564);
     text-align: center;
@@ -214,17 +238,54 @@ body .bergabung-dan-mendukung .content-bergabung-mendukung .norek {
     width: 350px;
 }
 
-body .bergabung-dan-mendukung .content-bergabung-mendukung .informasi {
-    flex: 1;
+body .bergabung-dan-mendukung .content-bergabung-mendukung .norek p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body .bergabung-dan-mendukung .content-bergabung-mendukung .norek button {
+    padding: 10px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #0c6008;
+    color: #fff;
+    border: 0;
+}
+
+body .bergabung-dan-mendukung .content-bergabung-mendukung .norek input {
+    display: none;
+}
+
+body .testimoni .list-testimoni {
+    overflow-x: scroll;
+    /* white-space: nowrap; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 body .testimoni .list-testimoni .testimonis {
     /* bg-warning px-5 py-2" style="width: 350px; */
-    background-color: orange;
+    background-color: #deefde;
     padding: 10px 20px;
-    width: 350px;
-    border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+    min-width: 350px;
+    /* border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px; */
+    border-radius: 12px;
+    border: 0.5px solid black;
+    margin: 0 20px;
+    text-align: center;
+}
+
+body .testimoni .list-testimoni .testimonis h4 {
+    font-weight: bold;
+    padding: 20px 0;
+    color: #0c6008;
+}
+
+body .testimoni .list-testimoni .testimonis .star {
+    padding: 20px 0;
+    display: block;
 }
 
 /* halaman shedule */
@@ -237,13 +298,11 @@ body .schedule .container-schedule {
 }
 
 body .schedule .list-schedule {
-    background-color: aqua;
-    /* text-align: center; */
     display: inline-block;
     margin: auto;
-    /* padding: 10px 20px; */
-    border-radius: 8px;
+    border-radius: 12px;
     margin-top: 30px;
+    border: 2px solid #0c6008;
 }
 body .schedule .list-schedule ol {
     position: relative;
@@ -252,7 +311,7 @@ body .schedule .list-schedule .hari {
     list-style: none;
     border-radius: 8px;
     font-weight: bold;
-    background-color: #aa0809;
+    background-color: #0c6008;
     width: 100%;
     text-align: center;
     padding: 10px;
@@ -272,7 +331,8 @@ body .contact-gambar {
     text-align: center;
     align-content: center;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
+    background-attachment: fixed;
     background-image: url("../gambar/bg-schedule.png");
     color: #fff;
 }
@@ -290,16 +350,22 @@ body .form-sosmed {
 }
 
 body .form-sosmed .sosial-media ul li,
-body footer ul li {
+body .form-sosmed .sosial-media ol li,
+footer ul li {
     list-style: none;
     font-size: 20px;
-    width: 100%;
-    background-color: aqua;
-    /* margin: auto; */
     margin-left: -1rem;
+    line-height: 50px;
 }
 
-body .form-sosmed .sosial-media ul li img {
+body .form-sosmed .sosial-media h1 {
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+body .form-sosmed .sosial-media ol li img {
     width: 30px;
     margin: 5px 15px;
 }
@@ -321,7 +387,7 @@ body .form-sosmed textarea {
     padding: 10px;
     outline: none;
     border: 0;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 body .form-sosmed form button {
@@ -329,7 +395,7 @@ body .form-sosmed form button {
     outline: none;
     border: 0;
     margin-top: 10px;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: bold;
 }
 
@@ -343,6 +409,11 @@ body footer {
     background-color: #eeeeee;
     /* margin: auto; */
     padding: 20px 0;
+}
+
+body footer h1 {
+    color: #000;
+    font-weight: bold;
 }
 
 body footer ul {
@@ -362,9 +433,117 @@ body footer ul li a img {
     margin-left: -35px;
 }
 
+/* halaman what we do */
+body .isi .informasi h1 {
+    color: #0c6008;
+    font-weight: bold;
+}
+
+body .isi .informasi p {
+    font-size: 19px;
+}
+
+body .list-faq-tabs {
+    /* background-color: aqua; */
+    border-radius: 15px;
+    padding: 0px;
+    position: relative;
+    margin-left: 20px;
+}
+
+body .list-faq-tabs h2 {
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    color: #0c6008;
+    font-weight: 600;
+    /* margin-left: 10px; */
+}
+
+body .list-faq-tabs .content p {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+body .list-faq-tabs label::before {
+    content: ">";
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    left: -20px;
+    top: -7px;
+    transition: 0.1s;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+body .list-faq-tabs:hover label::before {
+    color: #0c6008;
+}
+
+body .list-faq-tabs input:checked ~ label::before {
+    color: #0c6008;
+    transform: rotate(90deg);
+}
+
+body .list-faq-tabs input {
+    display: none;
+}
+
+body .list-faq-tabs .content {
+    max-height: 0;
+    overflow: hidden;
+    width: 70%;
+    /* transition: 0.1s ease-in; */
+}
+
+body .list-faq-tabs input:checked ~ .content {
+    max-height: 100%;
+}
+
+h1.titles {
+    font-weight: bold;
+}
+
+p.about-title {
+    font-weight: 600;
+}
+
+/*  */
+/* responsive */
+/*  */
 @media (max-width: 700px) {
     .halaman-utama {
         flex-direction: column-reverse;
+    }
+
+    body .informasi p {
+        font-size: 16px;
+        padding-right: 10px;
+    }
+
+    a.button {
+        font-size: 16px;
+    }
+
+    .halaman-utama .gambar img {
+        display: none;
+    }
+    .halaman-utama .gambar img.gambar-2 {
+        display: block !important;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-top: 100px;
+        margin-bottom: 10px;
+        border-radius: 12px;
+    }
+
+    body h1.text-center {
+        color: #0c6008 !important;
+        font-weight: bold;
+        margin-top: 20px;
+        padding-bottom: 8px;
+        margin-bottom: 20px !important;
     }
 
     .about .about-informasi,
@@ -376,12 +555,14 @@ body footer ul li a img {
     .about .about-informasi-2 .gambar {
         margin: auto !important;
         display: inline-block;
-        width: 60%;
+        width: 100%;
         /* margin-left: 100px; */
     }
 
     .about .gambar img {
         width: 100%;
+        margin: 25px auto;
+        border-radius: 12px;
     }
 
     .about .about-informasi-2 .informasi {
@@ -396,12 +577,44 @@ body footer ul li a img {
 
     .about p {
         padding: 0 !important;
+        font-size: 16px !important;
     }
 
     body .bergabung-dan-mendukung .content-bergabung-mendukung {
-        /* display: flex; */
         flex-direction: column;
-        /* align-items: center; */
+        padding-top: 10px;
+    }
+
+    body .bergabung-dan-mendukung .content-bergabung-mendukung .norek {
+        margin: 20px auto;
+        width: 250px;
+    }
+
+    body .bergabung-dan-mendukung .content-bergabung-mendukung .norek p {
+        font-size: 16px;
+    }
+
+    body .bergabung-dan-mendukung .content-bergabung-mendukung .norek button {
+        font-size: 16px;
+    }
+
+    /* testomoni */
+    body .testimoni .list-testimoni .testimonis {
+        min-width: 200px;
+    }
+
+    body .testimoni .list-testimoni .testimonis h4 {
+        font-size: 15px;
+        padding: 10px 0;
+    }
+
+    body .testimoni .list-testimoni .testimonis p {
+        font-size: 11px;
+    }
+
+    body .testimoni .list-testimoni .testimonis .star {
+        padding: 10px 0;
+        display: block;
     }
 
     /* what we do */
@@ -441,5 +654,13 @@ body footer ul li a img {
     body .form-sosmed .sosial-media ul li img {
         width: 30px;
         margin: 0px;
+    }
+
+    /* halaman shedule */
+    body .schedule .container-schedule {
+        width: 100%;
+    }
+    body .schedule .list-schedule ul {
+        padding: 40px 30px 0;
     }
 }

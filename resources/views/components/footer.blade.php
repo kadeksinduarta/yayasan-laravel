@@ -1,6 +1,6 @@
 <footer class="text-center">
     <h1>Yayasan</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolore animi quo praesentium repudiandae accusantium.</p>
+    <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolore animi quo praesentium repudiandae accusantium.</p>
     <ul class="">
         <li>
            <a href=""><img src="gambar/wa.png" alt=""></a>
